@@ -6,19 +6,25 @@ using LumiSoft.Media;
 using LumiSoft.Media.Wave;
 using System.Collections.Generic;
 using System.Threading;
+using System.IO;
 
 namespace UdpLesson
 {
     class Program
     {
+        public static List<byte> mediaData = new List<byte>();
         static void Main(string[] args)
         {
             Test test = new Test();
-           
-            while(true)
-            {
-                Thread.Sleep(10000);
-            }
+
+            Thread.Sleep(10000);
+            test.m_pSoundReceiver.Stop();
+            Console.WriteLine("all, done");
+
+            Console.ReadLine();
+            Console.WriteLine($"Hey {WaveOut.Devices[0].Name}");
+            WaveOut waveOut = new WaveOut(WaveOut.Devices[0], 8000, 16, 1);
+            waveOut.Play(mediaData.ToArray(), 300, 0);
             //UdpClient udpClient = new UdpClient(3132);
             //IPEndPoint endPoint = null; 
             //var result = udpClient.Receive(ref endPoint);
@@ -39,8 +45,7 @@ namespace UdpLesson
 
     public class Test
     {
-        private WaveIn m_pSoundReceiver = null;
-        private List<byte> mediaData = new List<byte>();
+        public WaveIn m_pSoundReceiver = null;
         /// <summary>
         /// Default constructor.
         /// </summary>
@@ -61,9 +66,9 @@ namespace UdpLesson
         /// <param name="buffer">Recorded data.</param>
         private void m_pSoundReceiver_BufferFull(byte[] buffer)
         {
-            mediaData.AddRange(buffer);
+            Program.mediaData.AddRange(buffer);
             Console.WriteLine("Message got");
-            
+
             // Just store audio data or stream it over the network ... 
         }
     }
