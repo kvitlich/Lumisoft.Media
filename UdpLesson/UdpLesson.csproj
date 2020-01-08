@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LumiSoft.Net" Version="2.0.4492.11923" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Go-Audio-Lesson-Tool\LumiSoft.Media.Wave\LumiSoft.Media.Wave.csproj" />
+  </ItemGroup>
+
+</Project>

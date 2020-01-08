@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpLesson", "UdpLesson\UdpLesson.csproj", "{DF82F30C-7843-4D6D-8117-D1B48811DA69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LumiSoft.Media.Wave", "..\Go-Audio-Lesson-Tool\LumiSoft.Media.Wave\LumiSoft.Media.Wave.csproj", "{451B9CE5-537B-4CBF-941C-31432B3D665B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF82F30C-7843-4D6D-8117-D1B48811DA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF82F30C-7843-4D6D-8117-D1B48811DA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF82F30C-7843-4D6D-8117-D1B48811DA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF82F30C-7843-4D6D-8117-D1B48811DA69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451B9CE5-537B-4CBF-941C-31432B3D665B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451B9CE5-537B-4CBF-941C-31432B3D665B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451B9CE5-537B-4CBF-941C-31432B3D665B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451B9CE5-537B-4CBF-941C-31432B3D665B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EFB8131-F7CB-499B-95BA-FFCD3327FCE9}
+	EndGlobalSection
+EndGlobal
